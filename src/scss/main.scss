@@ -1,6 +1,7 @@
 @import "normalize.css";
-$mainColor: steelblue;
-
-body {
-  background-color: $mainColor;
-}
+@import "modules/global";
+@import "modules/variables";
+@import "modules/button";
+@import "modules/wrapper";
+@import "modules/the-paragraph";
+@import "modules/large-hero";

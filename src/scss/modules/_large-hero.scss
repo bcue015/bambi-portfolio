@@ -1,0 +1,18 @@
+.large-hero {
+  &__title {
+    font-weight: 600;
+    font-size: 3rem;
+    color: $dark;
+  }
+
+  &__img_border {
+    display: inline-block;
+    border: 18px solid $mainColor;
+    border-radius: 50%;
+  }
+
+  &__image {
+    height: auto;
+    border-radius: 50%;
+  }
+}
