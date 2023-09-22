@@ -1,4 +1,5 @@
 import React, { useEffect } from "react"
+import Bambi from "../images/bambi.jpg"
 
 function LargeHero() {
   return (
@@ -15,7 +16,7 @@ function LargeHero() {
             </div>
             <div className="col-md-4">
               <div className="large-hero__img_border">
-                <img className="large-hero__image" src="../src/images/bambi.jpg" />
+                <img className="large-hero__image" src={Bambi} />
               </div>
             </div>
           </div>
