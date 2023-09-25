@@ -3,6 +3,11 @@ import BambiSmall from "../images/bambi.jpg"
 import BambiLarge from "../images/bambi-hi-dpi.jpg"
 
 function LargeHero() {
+  function modalButtonClicked(e) {
+    e.preventDefault
+    document.querySelector(".modal").classList.add("modal--is-visible")
+  }
+
   return (
     <section className="large-hero" id="my-home">
       <div className="wrapper wrapper--narrow-xs-to-md trigger-scroll">
@@ -13,7 +18,7 @@ function LargeHero() {
                 Making a website sytem at its <span className="finest">finest.</span>
               </h1>
               <p className="large-hero__text">Howdy! My name is Bambi and I am a wordpress developer. I can design simple yet astonishing responsive user-interfaces with user-experience on the fly. I can also create your own personal blog with wordpress and I can make it dynamic!</p>
-              <a href="#" className="btn btn--large btn--primary open-modal">
+              <a className="btn btn--large btn--primary open-modal" onClick={modalButtonClicked}>
                 Contact Me
               </a>
             </div>

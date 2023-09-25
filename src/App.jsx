@@ -11,6 +11,10 @@ import MyGoals from "./components/MyGoals"
 import Footer from "./components/Footer"
 
 function App() {
+  function closeButtonClicked(e) {
+    e.preventDefault
+    document.querySelector(".modal").classList.remove("modal--is-visible")
+  }
   return (
     <>
       <Header />
@@ -45,7 +49,9 @@ function App() {
             <span className="icon icon--modal-mail"></span> Email: barbiecuedotcom@gmail.com
           </h5>
         </div>
-        <div className="modal__close">X</div>
+        <div className="modal__close" onClick={closeButtonClicked}>
+          X
+        </div>
       </div>
     </>
   )
