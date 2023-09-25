@@ -1,0 +1,79 @@
+.u-section-title {
+  font-weight: 300;
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  line-height: 1;
+
+  &--mb-mt {
+    margin-bottom: 7rem;
+    margin-top: 0;
+  }
+
+  & span {
+    font-weight: 400;
+  }
+}
+
+.u-color-primary {
+  color: $primaryColor;
+}
+
+.u-color-main {
+  color: $mainColor;
+}
+
+.u-color-white {
+  color: white;
+}
+
+.u-margin-y-small {
+  margin: 2rem 0;
+}
+
+.u-bg-gradient-main {
+  background-image: linear-gradient(to right bottom, rgba($primaryColor, 1), rgba($mainColor, 1));
+}
+
+.u-bg-gradient-main1 {
+  background-image: linear-gradient(to right bottom, rgba($mainColor, 1), rgba($primaryColor, 1));
+}
+
+.u-bg-white {
+  background-color: white;
+}
+
+.u-bg-main {
+  background-color: $mainColor;
+}
+
+.u-mt-mb {
+  margin: 2rem 0;
+}
+
+.u-resp-mt {
+  margin-top: 5rem;
+
+  @include atMedium {
+    margin-top: 0;
+  }
+}
+
+.u-resp-mt--at-large {
+  margin-top: 5rem;
+
+  @include atLarge {
+    margin-top: 0;
+  }
+}
+
+.border {
+  border: 1px solid black;
+}
+
+.u-title-bb-mb {
+  border-bottom: 1px solid;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}

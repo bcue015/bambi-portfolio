@@ -1,0 +1,120 @@
+.row {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &--card-first-mb > div {
+    margin-bottom: 2.5rem;
+
+    @include atMedium {
+      margin-bottom: 0;
+    }
+  }
+
+  &--card-second-mb > div:not(:last-child) {
+    margin-bottom: 2.5rem;
+
+    @include atMedium {
+      margin-bottom: 0;
+    }
+  }
+
+  @include atMedium {
+    &--skills-mb {
+      margin-bottom: 3.5rem;
+    }
+  }
+
+  &--mb {
+    margin-bottom: 4rem;
+  }
+
+  &--md-flex-row {
+    @include atMedium {
+      flex-direction: row;
+    }
+  }
+
+  &--align-start {
+    align-items: flex-start;
+  }
+
+  &--lg-flex-row {
+    @include atLarge {
+      flex-direction: row;
+    }
+  }
+
+  &--gutters-small {
+    margin-right: -2rem;
+  }
+
+  &--gutters-small > div {
+    padding-right: 2rem;
+  }
+
+  &--gutters {
+    margin-right: -4rem;
+  }
+
+  &--gutters > div {
+    padding-right: 4rem;
+  }
+
+  &--gutters-large {
+    margin-right: -6rem;
+  }
+
+  &--gutters-large > div {
+    padding-right: 6rem;
+  }
+}
+.col {
+  @include atMedium {
+    &-md-6 {
+      width: 50%;
+    }
+
+    &-md-7 {
+      width: 58.33%;
+    }
+
+    &-md-5 {
+      width: 41.67%;
+
+      &--order-2 {
+        @include atMedium {
+          order: 2;
+        }
+      }
+
+      &--order-2 {
+        @include atMedium {
+          order: 1;
+        }
+      }
+    }
+
+    &-md-4 {
+      width: 33.33%;
+    }
+  }
+
+  @include atLarge {
+    &-lg-8 {
+      width: 66.66%;
+    }
+
+    &-lg-4 {
+      width: 33.33%;
+    }
+
+    &-lg-6 {
+      width: 50%;
+
+      &--align-start {
+        align-self: flex-start;
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.primary-nav {
+  display: none;
+
+  @include atMedium {
+    display: block;
+    width: 50%;
+    height: 100%;
+    margin-left: auto;
+    animation: moveInRight 2s ease-out;
+    -webkit-animation: moveInRight 2s ease-out;
+    animation-timing-function: cubic-bezier(0.59, 0.05, 0, 1.16);
+    -webkit-animation-timing-function: cubic-bezier(0.59, 0.05, 0, 1.16);
+    backface-visibility: hidden;
+  }
+
+  &--is-visible {
+    display: block;
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 25rem;
+
+    @include atMedium {
+      flex-direction: row;
+      justify-content: space-around;
+      height: auto;
+    }
+  }
+
+  li {
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $primaryColor;
+    transition: all 0.3s ease-out;
+    display: block;
+
+    &:hover {
+      color: $mainColor;
+      transform: rotate(9deg);
+    }
+
+    @include atMedium {
+      .site-header--dark & {
+        transform: scale(0.9);
+      }
+
+      &.is-current-link {
+        color: $mainColor;
+      }
+    }
+  }
+}

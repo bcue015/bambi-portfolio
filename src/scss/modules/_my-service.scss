@@ -1,0 +1,14 @@
+.my-service {
+  background-image: linear-gradient(to right bottom, rgba(#fce4ec, 1), rgba(#f06292, 1));
+
+  &__img {
+    position: relative;
+    z-index: 10;
+  }
+}
+
+.icon-cust {
+  display: block;
+  width: 100%;
+  height: auto;
+}

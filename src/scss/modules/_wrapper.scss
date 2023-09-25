@@ -5,4 +5,28 @@
   max-width: 1136px;
   margin-left: auto;
   margin-right: auto;
+
+  &--narrow-xs-to-md {
+    max-width: 800px;
+    @include atLarge {
+      max-width: 1136px;
+    }
+  }
+
+  &--my-profile {
+    max-width: 600px;
+    @include atMedium {
+      max-width: 1136px;
+    }
+  }
+
+  &--flex {
+    display: flex;
+    flex-direction: column;
+
+    @include atMedium {
+      align-items: center;
+      flex-direction: row;
+    }
+  }
 }
