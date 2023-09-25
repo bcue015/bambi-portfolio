@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import "./scss/main.scss"
 
 // Components
@@ -11,10 +11,34 @@ import MyGoals from "./components/MyGoals"
 import Footer from "./components/Footer"
 
 function App() {
+  // Here
+
+  const [hasElementAHittedElementB, setHasElementAHittedElementB] = useState(false)
+
+  useEffect(() => {
+    const siteHeader = document.querySelector(".site-header")
+    const handleScroll = () => {
+      if (window.scrollY > 60) {
+        siteHeader.classList.add("site-header--dark")
+      } else {
+        siteHeader.classList.remove("site-header--dark")
+      }
+    }
+
+    // Attach scroll event listener when the component mounts
+    window.addEventListener("scroll", handleScroll)
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+    }
+  }, [])
+
   function closeButtonClicked(e) {
     e.preventDefault
     document.querySelector(".modal").classList.remove("modal--is-visible")
   }
+
   return (
     <>
       <Header />
