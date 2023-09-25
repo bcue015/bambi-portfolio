@@ -1,4 +1,5 @@
 import React, { useEffect } from "react"
+import Bambi from "../images/bambi-1-small-hi-dpi.jpg"
 
 function AboutMe() {
   return (
@@ -11,7 +12,7 @@ function AboutMe() {
           <div className="col-md-5">
             <div className="card u-bg-gradient-main u-color-white">
               <div className="card__photo">
-                <img srcSet="src/images/bambi-1-small-hi-dpi.jpg" alt="Bambi" />
+                <img srcSet={Bambi} alt="Bambi" />
                 {/* <picture>
                     <source sizes="442px" data-srcset="src/images/bambi-1-large.jpg 442w, src/images/bambi-1-large-hi-dpi.jpg 884w" media="(min-width: 990px)" />
                     <img className="lazyload" data-srcset="src/images/bambi-1-small.jpg 573w, src/images/bambi-1-small-hi-dpi.jpg 1146w" alt="Bambi" />

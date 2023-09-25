@@ -1,4 +1,6 @@
 import React, { useEffect } from "react"
+import Wave from "../images/wave.png"
+import Goals from "../images/svg/goals.svg"
 
 function MyGoals() {
   return (
@@ -6,12 +8,12 @@ function MyGoals() {
       <h1 className="u-section-title u-section-title--mb-mt u-color-main trigger-reveal">
         My <span>Goals</span>
       </h1>
-      <img className="my-goals__wave lazyload" src="src/images/wave.png" alt="" />
+      <img className="my-goals__wave lazyload" src={Wave} alt="" />
       <div className="wrapper trigger-reveal">
         <div className="row row--lg-flex-row row--gutters-large">
           <div className="col-lg-6">
             <div className="my-goals__img">
-              <img src="src/images/svg/goals.svg" alt="" />
+              <img src={Goals} alt="" />
             </div>
           </div>
           <div className="col-lg-6 col-lg-6--align-start u-resp-mt--at-large">

@@ -1,4 +1,7 @@
 import React, { useEffect } from "react"
+import One from "../images/svg/service-html.svg"
+import Two from "../images/svg/service-wordpress.svg"
+import Three from "../images/svg/service-full.svg"
 
 function MyService() {
   return (
@@ -10,7 +13,7 @@ function MyService() {
         <div className="row row--md-flex-row row--gutters-large row--mb trigger-reveal">
           <div className="col-md-5 col-md-5--order-2">
             <div>
-              <img src="src/images/svg/service-html.svg" alt="" />
+              <img src={One} alt="" />
             </div>
           </div>
           <div className="col-md-7">
@@ -25,7 +28,7 @@ function MyService() {
         <div className="row row--md-flex-row row--gutters-large row--mb trigger-reveal">
           <div className="col-md-5 col-md-5--order-1">
             <div>
-              <img src="src/images/svg/service-wordpress.svg" alt="" />
+              <img src={Two} alt="" />
             </div>
           </div>
           <div className="col-md-7">
@@ -40,7 +43,7 @@ function MyService() {
         <div className="row row--md-flex-row row--gutters-large row--mb trigger-reveal">
           <div className="col-md-5 col-md-5--order-2">
             <div>
-              <img src="src/images/svg/service-full.svg" alt="" />
+              <img src={Three} alt="" />
             </div>
           </div>
           <div className="col-md-7">
