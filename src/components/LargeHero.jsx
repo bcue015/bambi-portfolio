@@ -1,5 +1,6 @@
 import React, { useEffect } from "react"
 import BambiSmall from "../images/bambi.jpg"
+import BambiLarge from "../images/bambi-hi-dpi.jpg"
 
 function LargeHero() {
   return (
@@ -19,7 +20,7 @@ function LargeHero() {
           </div>
           <div className="col-lg-4">
             <div className="large-hero__photo">
-              <img sizes="332px" srcSet="../images/bambi.jpg 332w, ../images/bambi-hi-dpi.jpg 596w" alt="Bambi" className="large-hero__img" />
+              <img sizes="332px" srcSet={`${BambiSmall} 332w, ${BambiLarge} 596w`} alt="Bambi" className="large-hero__img" />
               <div className="large-hero__description">
                 <h1 className="large-hero__name">Bambi Abangin</h1>
                 <p className="large-hero__job">GHL / React / Laravel Developer</p>
