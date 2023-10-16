@@ -1,4 +1,10 @@
 import React, { useEffect } from "react"
+import WordpressIcon from "../images/icons/wordpress.svg"
+import ReactIcon from "../images/icons/react.svg"
+import LaravelIcon from "../images/icons/laravel.svg"
+import GHLIcon from "../images/icons/ghl.svg"
+import AntD from "../images/icons/antdesign.svg"
+import BootstrapIcon from "../images/icons/bootstrap.svg"
 
 function ComponentName() {
   return (
@@ -12,10 +18,11 @@ function ComponentName() {
             <div className="my-skills__card">
               <div className="my-skills__card-img">
                 <span className="icon icon--html"></span>
+                <img className="icon icon--html" src={ReactIcon} alt="" />
               </div>
               <div className="my-skills__card-body">
-                <h5 className="my-skills__card-title">HTML 5</h5>
-                <p className="my-skills__card-text">The very basic language in web development and the most easiest to learn of all time. It took me a week for me learn this language before proceeding CSS. But there are still some elements or tags that I need to work on with because I'm not really a fan of preemptive memorizing. Researching is my meat and potatoes.</p>
+                <h5 className="my-skills__card-title">React</h5>
+                <p className="my-skills__card-text">The framework of Javascript that is quite interesting. I learn about React useState and useEffect, using Context, useReducer and Immer, routing, creating components and making it reusable, communicating to API using Axios and client-side validation. Right now, I'm using Vite(React) as the Frontend on my Laravel Projects. </p>
               </div>
             </div>
           </div>
@@ -23,10 +30,11 @@ function ComponentName() {
             <div className="my-skills__card">
               <div className="my-skills__card-img">
                 <span className="icon icon--css"></span>
+                <img className="icon icon--html" src={LaravelIcon} alt="" />
               </div>
               <div className="my-skills__card-body">
-                <h5 className="my-skills__card-title">CSS 3</h5>
-                <p className="my-skills__card-text">The language that made me hook for two months and still learning more about it. CSS will provide an eye-catching website and making it responsive to all devices like mobile and desktop. Some of developers underestimated this language because they think that its is so quite easy. Well, they have to reconsider to think again.</p>
+                <h5 className="my-skills__card-title">Laravel</h5>
+                <p className="my-skills__card-text">The framework of PHP that is responsible for backend stuffs. Combining Laravel and React is the best approach to build a website system. Using laravel passport or laravel sanctum would make the database secured. I learned about authentication, making controllers and models, migrating tables which is excellent on collaborating projects.</p>
               </div>
             </div>
           </div>
@@ -34,10 +42,11 @@ function ComponentName() {
             <div className="my-skills__card">
               <div className="my-skills__card-img">
                 <span className="icon icon--javascript"></span>
+                <img className="icon icon--html" src={AntD} alt="" />
               </div>
               <div className="my-skills__card-body">
-                <h5 className="my-skills__card-title">Javascript</h5>
-                <p className="my-skills__card-text">The most interactive language in my web development courses. Though I only learn basics like object-oriented programming, its quite helpful for me as a developer in terms of manipulating classNamees or id's in the DOM(Document Object Model). In fact this is my stepping stone in learning more and more about javascript.</p>
+                <h5 className="my-skills__card-title">Ant Design</h5>
+                <p className="my-skills__card-text">Ant Design is a React UI framework and it is one of the most widely used by web developers. It already have pre designed components which you can you use on the frontend. At first, I was bit confused by this framework but time goes by I began to adapt by it. The Ant Design components are flexible, fast and has a great designs.</p>
               </div>
             </div>
           </div>
@@ -47,9 +56,10 @@ function ComponentName() {
             <div className="my-skills__card my-skills__card--mb">
               <div className="my-skills__card-img">
                 <span className="icon icon--bootstrap"></span>
+                <img className="icon icon--html" src={BootstrapIcon} alt="" />
               </div>
               <div className="my-skills__card-body">
-                <h5 className="my-skills__card-title">Bootstrap 4</h5>
+                <h5 className="my-skills__card-title">Bootstrap</h5>
                 <p className="my-skills__card-text">I'm not really a fan of using bootstrap but I've had some experience of using it. It's quite easy and it can boost your web development workflow since it already have pre-designed components like carousel, buttons, alerts, cards and much more. But it can also be a pain when your employer wants a custom design and you're screwed.</p>
               </div>
             </div>
@@ -58,6 +68,7 @@ function ComponentName() {
             <div className="my-skills__card my-skills__card--mb">
               <div className="my-skills__card-img">
                 <span className="icon icon--wordpress"></span>
+                <img src={WordpressIcon} alt="" />
               </div>
               <div className="my-skills__card-body">
                 <h5 className="my-skills__card-title">Wordpress</h5>
@@ -69,10 +80,11 @@ function ComponentName() {
             <div className="my-skills__card my-skills__card--mb">
               <div className="my-skills__card-img">
                 <span className="icon icon--gulp"></span>
+                {/* <img src={GHLIcon} alt="" /> */}
               </div>
               <div className="my-skills__card-body">
-                <h5 className="my-skills__card-title">Gulp 4</h5>
-                <p className="my-skills__card-text">An automation tool that saves the day. Gulp saves me from auto compiling/bundling CSS and Javascript, auto-reloading webpages using browser-sync, optimizing images and svg's, minifying Javascript and CSS, and building. I already have my own configuration in my gulpfile and I used it in every projects to speed up my workflow.</p>
+                <h5 className="my-skills__card-title">GoHighLevel</h5>
+                <p className="my-skills__card-text">GoHighLevel is really easy to use and it is my favorite CRM software.</p>
               </div>
             </div>
           </div>

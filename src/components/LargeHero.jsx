@@ -15,9 +15,9 @@ function LargeHero() {
           <div className="col-lg-8">
             <div className="large-hero__content">
               <h1 className="large-hero__title">
-                Making a website sytem at its <span className="finest">finest.</span>
+                Web Developer and GoHighLevel <span className="finest">expert.</span>
               </h1>
-              <p className="large-hero__text">Howdy! My name is Bambi and I am a wordpress developer. I can design simple yet astonishing responsive user-interfaces with user-experience on the fly. I can also create your own personal blog with wordpress and I can make it dynamic!</p>
+              <p className="large-hero__text">Howdy! My name is Bambi. I love building website system and I speak the language of HTML, CSS, JavaScript, React, Laravel and a bunch of other tech tools. I am also an automation expert on GoHighLevel.</p>
               <a className="btn btn--large btn--primary open-modal" onClick={modalButtonClicked}>
                 Contact Me
               </a>

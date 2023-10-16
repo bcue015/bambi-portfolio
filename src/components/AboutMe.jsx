@@ -20,7 +20,7 @@ function AboutMe() {
               </div>
               <div className="card__body">
                 <h4 className="card__title">Bambi Abangin</h4>
-                <h5 className="card__subtitle">Wordpress Developer</h5>
+                <h5 className="card__subtitle">GHL / React / Laravel Developer</h5>
                 <hr />
                 <p className="card__text">&quot; There's nothing much happier when I successfully output the design onto the webpage. Which is why I do really love coding because it is full of logic. &quot;</p>
                 <hr />
@@ -48,7 +48,7 @@ function AboutMe() {
                 <br />
                 <p>Thanks to torrent sites, I manage to download those paid/premium video tutorials cause I dont want to spend a single penny though you already knew how to get it for free. I always love freebies, no offense.</p>
                 <br />
-                <p>Then I watch those video courses and I didnt regret it. I learned about web development workflow, making your website responsive, about Node Package Manager(NPM), automation tools like Gulp and Webpack, contributing projects to Github, Object-Oriented Programming in Javascript, compiling and bundling CSS and Javascript, using BEM(Block Element Modifier) for your CSS Architecture and using Babel for Javascript. Wordpress is the one that I was excited and eager to learn and it took most of my time developing websites using wordpress.</p>
+                <p>Then I watch those video courses and I didnt regret it. I learned about web development workflow, making your website responsive, about Node Package Manager(NPM), automation tools like Gulp, Webpack and Vite, contributing projects to Github, Object-Oriented Programming in Javascript, React useState and useEffect, using BEM(Block Element Modifier) for your CSS Architecture, CRUD(Create, Read, Update, and Delete) on Laravel, making controllers and models. Then I learn more about GoHighLevel like client onboarding, automation workflows, snapshots and many more.</p>
               </div>
             </div>
           </div>

@@ -34,6 +34,31 @@ function App() {
     }
   }, [])
 
+  useEffect(() => {
+    const itemsToReveal = document.querySelectorAll(".trigger-reveal")
+    itemsToReveal.forEach((el) => {
+      el.classList.add("reveal-item")
+    })
+
+    const handleScroll = () => {
+      itemsToReveal.forEach((el) => {
+        const scrollPercent = (el.getBoundingClientRect().y / window.innerHeight) * 100
+        if (scrollPercent < 75) {
+          el.classList.add("reveal-item--is-visible")
+        }
+        // console.log(el.getBoundingClientRect(el).y)
+      })
+    }
+
+    // Attach scroll event listener when the component mounts
+    window.addEventListener("scroll", handleScroll)
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+    }
+  }, [])
+
   function closeButtonClicked(e) {
     e.preventDefault
     document.querySelector(".modal").classList.remove("modal--is-visible")

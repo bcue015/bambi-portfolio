@@ -1,15 +1,12 @@
 .large-hero {
-  margin-bottom: 8rem;
-  padding-top: 16rem;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 
   @include atMedium {
-    margin-bottom: 10rem;
-    padding-top: 19rem;
   }
 
   @include atLarge {
-    margin-bottom: 3rem;
-    padding-top: 10rem;
   }
 
   &__content {
@@ -45,10 +42,11 @@
   }
 
   &__photo {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     display: none;
 
     @include atLarge {
-      padding: 8rem 0;
       display: block;
       animation: revealOpacity 1.3s, animation 1000ms linear 1.3s;
       -webkit-animation: revealOpacity 1.3s, animation 1000ms linear 1.3s;
