@@ -7,9 +7,14 @@ function MyService() {
   return (
     <section className="my-service page-section" id="my-service" data-matching-link="#my-service-link">
       <h1 className="u-section-title u-section-title--mb-mt u-color-primary trigger-reveal">
-        My <span>Service</span>
+        My <span>Projects</span>
       </h1>
       <div className="wrapper">
+        <div className="your-class">
+          <div>your content</div>
+          <div>your content</div>
+          <div>your content</div>
+        </div>
         <div className="row row--md-flex-row row--gutters-large row--mb trigger-reveal">
           <div className="col-md-5 col-md-5--order-2">
             <div>

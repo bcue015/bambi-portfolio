@@ -9,6 +9,9 @@ import MySkills from "./components/MySkills"
 import MyService from "./components/MyService"
 import MyGoals from "./components/MyGoals"
 import Footer from "./components/Footer"
+import FacebookIcon from "./images/icons/facebook.svg"
+import Instagram from "./images/icons/instagram.svg"
+import Twitter from "./images/icons/twitter.svg"
 
 function App() {
   // Here
@@ -75,7 +78,7 @@ function App() {
 
       <AboutMe />
       <MySkills />
-      <MyService />
+      {/* <MyService /> */}
       <MyGoals />
       <Footer />
 
@@ -85,13 +88,15 @@ function App() {
           <p className="modal__text">I will be having an online message soon. For the meantime, you can contact me in the following platforms below.</p>
           <div className="modal__icons">
             <a href="https://www.facebook.com/amawdotcomdotph" target="_blank" className="modal__icon-links">
-              <span className="icon icon--modal-facebook"></span>
+              <img className="icon icon--modal-facebook" src={FacebookIcon} alt="" />
             </a>
-            <a href="https://twitter.com/Bambi92491688" target="_blank" className="modal__icon-links modal__icon-links--twitter">
-              <span className="icon icon--modal-twitter"></span>
+            <a href="https://www.instagram.com/amawdotcomdotph/" target="_blank" className="modal__icon-links modal__icon-links--twitter">
+              {/* <span className="icon icon--modal-twitter"></span> */}
+              <img className="icon icon--modal-twitter" src={Instagram} alt="" />
             </a>
-            <a href="https://www.youtube.com/channel/UCQv8fBPs460TnxwfVl2FeHw" target="_blank" className="modal__icon-links">
-              <span className="icon icon--modal-youtube"></span>
+            <a href="https://twitter.com/amawdotcomdotph" target="_blank" className="modal__icon-links">
+              {/* <span className="icon icon--modal-youtube"></span> */}
+              <img className="icon icon--modal-youtube" src={Twitter} alt="" />
             </a>
           </div>
           <h5 className="modal__email">

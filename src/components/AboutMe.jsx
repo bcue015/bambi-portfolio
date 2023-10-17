@@ -1,5 +1,8 @@
 import React, { useEffect } from "react"
 import Bambi from "../images/bambi-1-small-hi-dpi.jpg"
+import FacebookIcon from "../images/icons/facebook.svg"
+import InstagramIcon from "../images/icons/instagram.svg"
+import Twitter from "../images/icons/twitter.svg"
 
 function AboutMe() {
   return (
@@ -26,13 +29,16 @@ function AboutMe() {
                 <hr />
                 <div className="card__icons">
                   <a href="https://www.facebook.com/amawdotcomdotph" target="_blank">
-                    <span className="icon icon--facebook"></span>
+                    {/* <span className="icon icon--facebook"></span> */}
+                    <img className="icon icon--facebook" src={FacebookIcon} alt="" />
                   </a>
-                  <a href="https://twitter.com/Bambi92491688" target="_blank" className="card__icons--twitter">
-                    <span className="icon icon--twitter"></span>
+                  <a href="https://www.instagram.com/amawdotcomdotph/" target="_blank" className="card__icons--twitter">
+                    {/* <span className="icon icon--twitter"></span> */}
+                    <img className="icon icon--twitter" src={InstagramIcon} alt="" />
                   </a>
-                  <a href="https://www.youtube.com/channel/UCQv8fBPs460TnxwfVl2FeHw" target="_blank">
-                    <span className="icon icon--youtube"></span>
+                  <a href="https://twitter.com/amawdotcomdotph" target="_blank">
+                    {/* <span className="icon icon--youtube"></span> */}
+                    <img className="icon icon--youtube" src={Twitter} alt="" />
                   </a>
                 </div>
               </div>

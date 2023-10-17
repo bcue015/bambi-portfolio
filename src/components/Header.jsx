@@ -34,7 +34,7 @@ function Header() {
             </li>
             <li>
               <a href="#my-service" id="my-service-link">
-                Service
+                Projects
               </a>
             </li>
             <li>

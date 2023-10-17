@@ -80,11 +80,11 @@ function ComponentName() {
             <div className="my-skills__card my-skills__card--mb">
               <div className="my-skills__card-img">
                 <span className="icon icon--gulp"></span>
-                {/* <img src={GHLIcon} alt="" /> */}
+                <img className="icon icon--gulp" src={GHLIcon} alt="" />
               </div>
               <div className="my-skills__card-body">
                 <h5 className="my-skills__card-title">GoHighLevel</h5>
-                <p className="my-skills__card-text">GoHighLevel is really easy to use and it is my favorite CRM software.</p>
+                <p className="my-skills__card-text">GoHighLevel is really easy to use and it is my favorite CRM software. I can create funnels/opportunities, landing pages, drag and drops surveys, and build an online book appointment. GHL is also known on their automation workflows, snapshots, client onboarding, memberships, white label and many more.</p>
               </div>
             </div>
           </div>
