@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-import Bambi from "../images/bambi-1-small-hi-dpi.jpg"
+import Bambi from "../images/bambi-profile.png"
 import FacebookIcon from "../images/icons/facebook.svg"
 import InstagramIcon from "../images/icons/instagram.svg"
 import Twitter from "../images/icons/twitter.svg"
@@ -13,34 +13,9 @@ function AboutMe() {
         </h1>
         <div className="row row--md-flex-row row--gutters row--align-start trigger-reveal">
           <div className="col-md-5">
-            <div className="card u-bg-gradient-main u-color-white">
+            <div className="card ">
               <div className="card__photo">
                 <img srcSet={Bambi} alt="Bambi" />
-                {/* <picture>
-                    <source sizes="442px" data-srcset="src/images/bambi-1-large.jpg 442w, src/images/bambi-1-large-hi-dpi.jpg 884w" media="(min-width: 990px)" />
-                    <img className="lazyload" data-srcset="src/images/bambi-1-small.jpg 573w, src/images/bambi-1-small-hi-dpi.jpg 1146w" alt="Bambi" />
-                  </picture> */}
-              </div>
-              <div className="card__body">
-                <h4 className="card__title">Bambi Abangin</h4>
-                <h5 className="card__subtitle">GHL / React / Laravel Developer</h5>
-                <hr />
-                <p className="card__text">&quot; There's nothing much happier when I successfully output the design onto the webpage. Which is why I do really love coding because it is full of logic. &quot;</p>
-                <hr />
-                <div className="card__icons">
-                  <a href="https://www.facebook.com/amawdotcomdotph" target="_blank">
-                    {/* <span className="icon icon--facebook"></span> */}
-                    <img className="icon icon--facebook" src={FacebookIcon} alt="" />
-                  </a>
-                  <a href="https://www.instagram.com/amawdotcomdotph/" target="_blank" className="card__icons--twitter">
-                    {/* <span className="icon icon--twitter"></span> */}
-                    <img className="icon icon--twitter" src={InstagramIcon} alt="" />
-                  </a>
-                  <a href="https://twitter.com/amawdotcomdotph" target="_blank">
-                    {/* <span className="icon icon--youtube"></span> */}
-                    <img className="icon icon--youtube" src={Twitter} alt="" />
-                  </a>
-                </div>
               </div>
             </div>
           </div>

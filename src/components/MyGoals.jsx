@@ -8,7 +8,7 @@ function MyGoals() {
       <h1 className="u-section-title u-section-title--mb-mt u-color-main trigger-reveal">
         My <span>Goals</span>
       </h1>
-      <img className="my-goals__wave lazyload" src={Wave} alt="" />
+      {/* <img className="my-goals__wave lazyload" src={Wave} alt="" /> */}
       <div className="wrapper trigger-reveal">
         <div className="row row--lg-flex-row row--gutters-large">
           <div className="col-lg-6">
@@ -20,13 +20,18 @@ function MyGoals() {
             <div className="my-profile__story">
               <h3 className="my-profile__story-title u-color-main u-title-bb-mb">An Ongoing Learning</h3>
               <div className="my-profile__story-text">
-                <p>Staying current is what I have in my mind right now because I dont want to get behind. Web development, wordpress specifically, is in demand yet a crowded places wherin you could meet a lots of talented competitors. Not to mention there are page-builders to which the one who doesn't know about coding can build an extravagant websites. And staying current to all of my tools and designs will help me rise up.</p>
+                <p>
+                  <strong>
+                    <span className="u-color-main">Staying current</span>
+                  </strong>{" "}
+                  is what drives me right now—I don’t want to fall behind. Web development is constantly evolving, and while Laravel and React are powerful tools, they’re also part of a highly competitive field filled with incredibly talented developers. With the rise of no-code tools and page builders, even those without deep coding knowledge can now create visually impressive websites. That’s why staying up to date with my tools, tech stack, and design trends is essential if I want to stand out and grow.
+                </p>
                 <br />
-                <p>Next is learning javascript. Javascript is a popular language which most of the developers used. And I'm still learning a thing or two about this language, but first I have to learn the plain javascript language to whom they refered as &quot;vanilla javascript&quot;, before I proceed to those javascript frameworks like jquery and react.</p>
+                <p>Next on my list is mastering Amazon Web Services (AWS), specifically its architecture. As one of the leading cloud platforms in the industry, AWS offers powerful tools that are essential for building scalable, secure, and reliable web applications. I’m currently diving into the core architectural concepts—learning how different AWS services like EC2, S3, Lambda, RDS, and VPC come together to form robust infrastructure. My goal is to understand how to design systems that are not only efficient but also cost-effective and resilient, whether it’s for hosting modern web apps or deploying backend APIs. Before diving into advanced configurations or automation, I’m focusing on solidifying my grasp of the fundamentals—because knowing the architecture inside out lays the groundwork for everything else.</p>
                 <br />
-                <p>And finally, I have to learn about advance wordpress, like the famous wordpress plugin woocommerce. Every e-commerce website always strikes my curiousity on how would they do it, how do they integrate payments or any questions regarding e-commerce that makes the question mark revolves around my head.</p>
+                <p>And finally, I’ve already mastered GoHighLevel (GHL), from building funnels and automations to managing CRM workflows and client accounts. But the learning doesn’t stop there—GHL is constantly evolving, especially with the introduction of powerful AI-driven features and new integrations. These updates fuel my curiosity even more. I find myself digging deeper into how these tools can be optimized, automated, and customized to create smarter, more efficient systems for businesses. Staying ahead of GHL’s rapid development ensures that I can keep delivering cutting-edge solutions to any project I take on.</p>
                 <br />
-                <p>But it doesn't matter because I will never stop from learning. And if curiousity strikes me, then I will have to dig deeper cause its all worth it.</p>
+                <p>In the end, none of it feels like a burden—because I’ll never stop learning. When curiosity strikes, I dig deeper. Because every bit of knowledge gained is always worth it.</p>
               </div>
             </div>
           </div>

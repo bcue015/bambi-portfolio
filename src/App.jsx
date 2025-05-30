@@ -10,7 +10,7 @@ import MyService from "./components/MyService"
 import MyGoals from "./components/MyGoals"
 import Footer from "./components/Footer"
 import FacebookIcon from "./images/icons/facebook.svg"
-import Instagram from "./images/icons/instagram.svg"
+import Instagram from "./images/icons/whatsapp.svg"
 import Twitter from "./images/icons/twitter.svg"
 
 function App() {
@@ -78,7 +78,7 @@ function App() {
 
       <AboutMe />
       <MySkills />
-      {/* <MyService /> */}
+      <MyService />
       <MyGoals />
       <Footer />
 
@@ -90,7 +90,7 @@ function App() {
             <a href="https://www.facebook.com/amawdotcomdotph" target="_blank" className="modal__icon-links">
               <img className="icon icon--modal-facebook" src={FacebookIcon} alt="" />
             </a>
-            <a href="https://www.instagram.com/amawdotcomdotph/" target="_blank" className="modal__icon-links modal__icon-links--twitter">
+            <a href="https://wa.me/639912936370" target="_blank" className="modal__icon-links modal__icon-links--twitter">
               {/* <span className="icon icon--modal-twitter"></span> */}
               <img className="icon icon--modal-twitter" src={Instagram} alt="" />
             </a>
