@@ -1,69 +1,25 @@
-import React, { useEffect, useState } from "react"
-import Saassaid from "../images/said/saas-said.png"
-import { Card, Carousel, Col, Row, Image } from "antd"
-const { Meta } = Card
+import React from "react"
+import { Image, Typography } from "antd"
+import { webProjects } from "../data/projects"
+
 function MyProjectLarge() {
   return (
-    <Carousel arrows infinite={false}>
-      {" "}
-      <div>
-        <Row gutter={[20, 20]}>
-          <Col xs={24} sm={24} md={24} lg={8} xl={8}>
-            <Card hoverable cover={<Image src={Saassaid} />}>
-              <Meta title="Inventory System" description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. " />
-            </Card>
-          </Col>
-          <Col xs={24} sm={24} md={24} lg={8} xl={8}>
-            <Card hoverable cover={<Image src={Saassaid} />}>
-              <Meta title="Inventory System" description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. " />
-            </Card>
-          </Col>
-          <Col xs={24} sm={24} md={24} lg={8} xl={8}>
-            <Card hoverable cover={<Image src={Saassaid} />}>
-              <Meta title="Inventory System" description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. " />
-            </Card>
-          </Col>
-        </Row>
-      </div>
-      <div>
-        <Row gutter={[20, 20]}>
-          <Col xs={24} sm={24} md={24} lg={8} xl={8}>
-            <Card hoverable cover={<Image src={Saassaid} />}>
-              <Meta title="Inventory System" description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. " />
-            </Card>
-          </Col>
-          <Col xs={24} sm={24} md={24} lg={8} xl={8}>
-            <Card hoverable cover={<Image src={Saassaid} />}>
-              <Meta title="Inventory System" description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. " />
-            </Card>
-          </Col>
-          <Col xs={24} sm={24} md={24} lg={8} xl={8}>
-            <Card hoverable cover={<Image src={Saassaid} />}>
-              <Meta title="Inventory System" description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. " />
-            </Card>
-          </Col>
-        </Row>
-      </div>
-      <div>
-        <Row gutter={[20, 20]}>
-          <Col xs={24} sm={24} md={24} lg={8} xl={8}>
-            <Card hoverable cover={<Image src={Saassaid} />}>
-              <Meta title="Inventory System" description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. " />
-            </Card>
-          </Col>
-          <Col xs={24} sm={24} md={24} lg={8} xl={8}>
-            <Card hoverable cover={<Image src={Saassaid} />}>
-              <Meta title="Inventory System" description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. " />
-            </Card>
-          </Col>
-          <Col xs={24} sm={24} md={24} lg={8} xl={8}>
-            <Card hoverable cover={<Image src={Saassaid} />}>
-              <Meta title="Inventory System" description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. " />
-            </Card>
-          </Col>
-        </Row>
-      </div>
-    </Carousel>
+    <div className="project-grid">
+      {webProjects.map((project) => (
+        <article className="project-card" key={project.title}>
+          <div className="project-card__media">
+            <Image src={project.image} alt={project.title} preview={{ mask: "View screenshot" }} />
+          </div>
+          <div className="project-card__body">
+            <span className="project-card__tag">{project.category}</span>
+            <h3 className="project-card__title">{project.title}</h3>
+            <Typography.Paragraph className="project-card__desc" ellipsis={{ rows: 3, expandable: "collapsible", symbol: (expanded) => (expanded ? "Show less" : "Read more") }}>
+              {project.description}
+            </Typography.Paragraph>
+          </div>
+        </article>
+      ))}
+    </div>
   )
 }
 

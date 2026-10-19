@@ -1,46 +1,41 @@
-import React, { useEffect, useState } from "react"
-import One from "../images/svg/service-html.svg"
-import Two from "../images/svg/service-wordpress.svg"
-import Three from "../images/svg/service-full.svg"
-import Saassaid from "../images/said/saas-said.png"
+import React from "react"
+// import One from "../images/svg/service-html.svg"
+// import Two from "../images/svg/service-wordpress.svg"
+// import Three from "../images/svg/service-full.svg"
+// import Saassaid from "../images/said/saas-said.png"
 import MyProjectLarge from "./MyProjectLarge"
-import MyProjectMedium from "./MyProjectMedium"
-import { Tabs, ConfigProvider, Card, Carousel, Col, Row, Image } from "antd"
+import GhlProjectsLarge from "./GhlProjectsLarge"
+import { webProjects, ghlVideos } from "../data/projects"
+import { Tabs, ConfigProvider } from "antd"
 
-const { Meta } = Card
-const onChange = (key) => {
-  console.log(key)
-}
+const tabLabel = (text, count) => (
+  <span className="my-service__tab">
+    {text}
+    {count > 0 && <span className="my-service__tab-count">{count}</span>}
+  </span>
+)
 
 function MyService() {
-  const [width, setWidth] = useState(window.innerWidth)
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWidth(window.innerWidth)
-    }
-
-    window.addEventListener("resize", handleResize)
-
-    return () => {
-      window.removeEventListener("resize", handleResize)
-    }
-  }, [])
   const items = [
     {
       key: "1",
-      label: "Web Development",
-      children: width < 768 ? <MyProjectMedium /> : <MyProjectLarge />,
+      label: tabLabel("Web Development", webProjects.length),
+      children: <MyProjectLarge />,
     },
     {
       key: "2",
-      label: "Go High Level",
-      children: "Content of Tab Pane 2",
+      label: tabLabel("Go High Level", ghlVideos.length),
+      children: <GhlProjectsLarge />,
     },
     {
       key: "3",
-      label: "Video Editing",
-      children: "Content of Tab Pane 3",
+      label: tabLabel("Video Editing", 0),
+      children: (
+        <div className="my-service__empty">
+          <h3>Coming soon</h3>
+          <p>Video editing samples are on the way.</p>
+        </div>
+      ),
     },
   ]
   return (
@@ -49,12 +44,13 @@ function MyService() {
         My <span>Projects</span>
       </h1>
       <div className="wrapper">
-        <div className="your-class">
+        <div className="your-class trigger-reveal">
           <ConfigProvider
             theme={{
               token: {
                 // Seed Token
-                colorPrimary: "#e91e63",
+                colorPrimary: "#2563eb",
+                colorLink: "#2563eb",
                 // borderRadius: 2,
                 // fontSize: 20,
                 // fontFamily: "Roboto",
@@ -64,7 +60,7 @@ function MyService() {
               },
             }}
           >
-            <Tabs centered defaultActiveKey="1" items={items} onChange={onChange} />
+            <Tabs centered defaultActiveKey="1" items={items} />
           </ConfigProvider>
         </div>
         {/* <div className="row row--md-flex-row row--gutters-large row--mb trigger-reveal">

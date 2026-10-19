@@ -1,29 +1,192 @@
+// Section accent — change this one line to recolor the Goals section
+$goalsAccent: $mainColor;
+
 .my-goals {
   position: relative;
+  background: linear-gradient(to bottom, #fff 0%, #faf5fb 100%);
 
-  &__wave {
-    position: absolute;
-    width: 50%;
-    display: none;
-    left: 0;
-    top: 10.68rem;
-    z-index: -1;
+  /* Intro: illustration + "An Ongoing Learning" */
+  &__intro {
+    display: grid;
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 6rem;
 
     @include atLarge {
-      display: block;
-      height: 860px;
-    }
-
-    @include atBetLargeToExtraLarge {
-      height: 830px;
-    }
-
-    @include atExtraLarge {
-      height: 800px;
+      grid-template-columns: 5fr 6fr;
+      gap: 6rem;
     }
   }
 
   &__img {
-    align-self: center;
+    max-width: 52rem;
+    margin: 0 auto;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__eyebrow {
+    display: block;
+    margin-bottom: 0.8rem;
+    color: $mainGray;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+  }
+
+  &__heading {
+    margin-bottom: 2rem;
+    color: $goalsAccent;
+    font-size: 3.2rem;
+    font-weight: 400;
+  }
+
+  &__lead {
+    color: $mainGray;
+    font-size: 1.7rem;
+    font-weight: 300;
+    line-height: 1.8;
+
+    strong {
+      color: $goalsAccent;
+      font-weight: 500;
+    }
+  }
+
+  /* Goal cards */
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 36rem), 1fr));
+    gap: 2.8rem;
+    align-items: start;
+    margin-bottom: 6rem;
+  }
+
+  &__card {
+    position: relative;
+    padding: 3rem 2.8rem 2.8rem;
+    background: #fff;
+    border: 1px solid rgba($goalsAccent, 0.12);
+    border-radius: 1.6rem;
+    box-shadow: 0 0.6rem 2rem rgba($mainDark, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s;
+
+    &:hover {
+      transform: translateY(-0.6rem);
+      border-color: rgba($goalsAccent, 0.3);
+      box-shadow: 0 1.6rem 3.6rem rgba($goalsAccent, 0.16);
+    }
+
+    &-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.6rem;
+    }
+
+    &-number {
+      background: linear-gradient(to right bottom, $goalsAccent, $primaryColor);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      font-size: 4rem;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    &-status {
+      padding: 0.5rem 1.2rem;
+      border-radius: 999px;
+      background: rgba($goalsAccent, 0.08);
+      color: $goalsAccent;
+      font-size: 1.2rem;
+      font-weight: 500;
+      letter-spacing: 0.06rem;
+      text-transform: uppercase;
+    }
+
+    &-title {
+      margin-bottom: 1.4rem;
+      color: $mainDark;
+      font-size: 2.2rem;
+      font-weight: 500;
+    }
+
+    &-text.ant-typography {
+      margin-bottom: 0;
+      color: $mainGray;
+      font-size: 1.5rem;
+      font-weight: 300;
+      line-height: 1.75;
+
+      .ant-typography-expand,
+      .ant-typography-collapse {
+        color: $goalsAccent;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-bottom: 1.8rem;
+    list-style: none;
+  }
+
+  &__tag {
+    padding: 0.4rem 1.1rem;
+    border-radius: 0.6rem;
+    background: #f5f5f7;
+    color: $mainDark;
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+
+  /* Closing quote banner */
+  &__quote {
+    position: relative;
+    overflow: hidden;
+    padding: 5rem 3rem;
+    border-radius: 2rem;
+    background-image: linear-gradient(to right bottom, $goalsAccent, $primaryColor);
+    box-shadow: 0 2rem 4rem rgba($goalsAccent, 0.25);
+    text-align: center;
+
+    @include atMedium {
+      padding: 6rem 8rem;
+    }
+
+    // Oversized quote mark in the background
+    &::before {
+      content: "\201C";
+      position: absolute;
+      top: -3rem;
+      left: 2rem;
+      color: rgba(#fff, 0.15);
+      font-family: Georgia, serif;
+      font-size: 22rem;
+      line-height: 1;
+    }
+
+    p {
+      position: relative;
+      max-width: 70rem;
+      margin: 0 auto;
+      color: #fff;
+      font-size: 2rem;
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.6;
+
+      @include atMedium {
+        font-size: 2.4rem;
+      }
+    }
   }
 }

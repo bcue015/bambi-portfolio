@@ -72,9 +72,9 @@ function App() {
       <Header />
       <LargeHero />
 
-      <div className="wrapper">
+      {/* <div className="wrapper">
         <hr />
-      </div>
+      </div> */}
 
       <AboutMe />
       <MySkills />
