@@ -28,8 +28,10 @@ function VideoCard({ title, youtubeId, description }) {
         )}
       </div>
 
-      {/* destroyOnHidden removes the player on close, which stops playback */}
-      <Modal open={open} onCancel={() => setOpen(false)} footer={null} centered destroyOnHidden width="min(1100px, 92vw)" wrapClassName="video-lightbox" styles={{ mask: { background: "rgba(0, 0, 0, 0.85)" } }}>
+      {/* destroyOnHidden removes the player on close, which stops playback.
+          YouTube picks quality from the player's size (embeds can't force 1080p), so the
+          player is as large as the screen allows while still fitting fully in view. */}
+      <Modal open={open} onCancel={() => setOpen(false)} footer={null} centered destroyOnHidden width="min(1600px, 94vw, (100vh - 16rem) * 16 / 9)" wrapClassName="video-lightbox" styles={{ mask: { background: "rgba(0, 0, 0, 0.85)" } }}>
         <div className="video-lightbox__frame">
           <iframe src={`https://www.youtube.com/embed/${youtubeId}?autoplay=1&rel=0`} title={title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
         </div>
