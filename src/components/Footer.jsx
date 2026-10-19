@@ -2,7 +2,7 @@ import React, { useEffect } from "react"
 
 function Footer() {
   function modalButtonClicked(e) {
-    e.preventDefault
+    e.preventDefault()
     document.querySelector(".modal").classList.add("modal--is-visible")
   }
   return (
